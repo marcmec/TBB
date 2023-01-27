@@ -24,7 +24,7 @@ export default function Home() {
                 <div className="banner-hero" />
                 <h3>we're here to help</h3>
                 <br />
-                <div className="copy-help">
+                <section className="copy-help">
                     <p>
                         When it comes to caring for our most intimate areas,
                         <br /> we’ve lost our connection.
@@ -43,7 +43,7 @@ export default function Home() {
                         knowledge and products you need to feel confident in
                         your personal care.
                     </p>
-                </div>
+                </section>
                 <div className="icons" />
                 <br />
                 <h3>
@@ -51,7 +51,7 @@ export default function Home() {
                     interests.
                 </h3>
                 <br />
-                <div className="copy-help">
+                <section className="copy-help">
                     <p>
                         Co-created with gynaecologists, our revolutionary
                         products have been expertly developed to support your
@@ -63,7 +63,7 @@ export default function Home() {
                         discussion about intimate wellness care out of the dark
                         and demystify the taboos that surround it.
                     </p>
-                </div>
+                </section>
                 <br />
                 <ListProducts />
                 <div className="banner-products" />

@@ -16,7 +16,7 @@ const ListDiscoveries = () => {
         },
     ];
     return (
-        <div className="keep-to-date">
+        <section className="keep-to-date">
             <h3>keep up to date with our discoveries</h3>
 
             <div className="list-discoveries">
@@ -25,7 +25,7 @@ const ListDiscoveries = () => {
                 ))}
             </div>
             <button onClick={() => console.log("by Marcos")}>see more</button>
-        </div>
+        </section>
     );
 };
 

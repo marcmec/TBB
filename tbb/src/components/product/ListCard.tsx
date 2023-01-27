@@ -7,7 +7,7 @@ const ListProducts = () => {
         { item: "agecare", image: "/mask-agecare.png", color: "#ee6381" },
     ];
     return (
-        <div className="card-list-products">
+        <section className="card-list-products">
             <h3>our products</h3>
 
             <div className="list-products">
@@ -19,7 +19,7 @@ const ListProducts = () => {
                     />
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 
