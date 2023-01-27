@@ -1,4 +1,5 @@
 import NavBar from "@/components/NavBar";
+import ListProducts from "@/components/product/ListCard";
 import styles from "@/styles/Home.module.css";
 import Head from "next/head";
 
@@ -42,6 +43,32 @@ export default function Home() {
                         your personal care.
                     </p>
                 </div>
+                <div className="icons" />
+                <br />
+                <h3>
+                    whatever your age. whatever your lifestyle. whatever your
+                    interests.
+                </h3>
+                <br />
+                <div className="copy-help">
+                    <p>
+                        Co-created with gynaecologists, our revolutionary
+                        products have been expertly developed to support your
+                        intimate microbiome and pH balance, and strengthen
+                        overall natural health.
+                    </p>
+                    <p>
+                        As the experts in intimate hygiene, we want to bring
+                        discussion about intimate wellness care out of the dark
+                        and demystify the taboos that surround it.
+                    </p>
+                </div>
+                <br />
+                <h3>our products</h3>
+                <ListProducts />
+                <div className="banner-products" />
+                <h3>keep up to date with our discoveries</h3>
+                <div className="card-news"></div>
             </main>
         </>
     );
