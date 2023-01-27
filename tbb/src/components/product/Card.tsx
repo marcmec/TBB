@@ -1,13 +1,16 @@
 interface ProductProps {
     item: string;
     image: string;
+    color: string;
 }
 
-const ProductCard = ({ item, image }: ProductProps) => {
+const ProductCard = ({ item, image, color }: ProductProps) => {
     return (
-        <div>
+        <div className="card-product">
             <img src={image} />
-            <p>{item}</p>
+            <div style={{ backgroundColor: color }}>
+                <span>{item}</span>
+            </div>
         </div>
     );
 };

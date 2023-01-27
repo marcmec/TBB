@@ -1,3 +1,4 @@
+import ListDiscoveries from "@/components/discoveries/ListDicoveries";
 import NavBar from "@/components/NavBar";
 import ListProducts from "@/components/product/ListCard";
 import styles from "@/styles/Home.module.css";
@@ -64,12 +65,13 @@ export default function Home() {
                     </p>
                 </div>
                 <br />
-                <h3>our products</h3>
                 <ListProducts />
                 <div className="banner-products" />
-                <h3>keep up to date with our discoveries</h3>
-                <div className="card-news"></div>
+                <ListDiscoveries />
             </main>
+            {/* <footer>
+                <span> ooopa</span>
+            </footer> */}
         </>
     );
 }

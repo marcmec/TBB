@@ -1,3 +1,9 @@
+:root {
+    --product-wellness: #389cd6;
+    --product-active: #309d5f;
+    --product-agecare: #ee6381;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -41,9 +47,6 @@ p {
     font: normal normal normal 20px Trebuchet MS;
     letter-spacing: 0.4px;
     color: #7b7070;
-}
-
-.products {
 }
 
 .banner-products {

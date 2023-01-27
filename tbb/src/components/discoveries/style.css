@@ -1,0 +1,35 @@
+.keep-to-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+.list-discoveries {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.card-discovery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    letter-spacing: 0.4px;
+    color: #7b7070;
+    text-align: justify;
+}
+.card-discovery span {
+    max-width: 292px;
+}
+button {
+    width: 312px;
+    height: 64px;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+    text-transform: lowercase;
+    background: #389cd6 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    border-width: 0;
+}
