@@ -30,7 +30,13 @@
 ul li {
     display: inline-block;
     padding: 0px 40px;
-    height: 48px;
+    align-items: center;
+}
+.li-content {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
 }
 .nav-sub {
     display: none;
