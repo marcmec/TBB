@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+}
+.logo-and-search {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-direction: row;
+    width: 100vw;
+}
+.nav-health {
+    width: 100vw;
+    background: #389cd6 0% 0% no-repeat padding-box;
+    top: 80px;
+    display: inline-block;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+}
+ul li {
+    display: inline-block;
+    padding: 0px 40px;
+    height: 48px;
+}
+.nav-sub {
+    display: none;
+    background: #9d8e8e 0% 0% no-repeat padding-box;
+    padding: 0;
+    text-align: start;
+    display: none;
+    width: 100vw;
+    padding-left: 1rem;
+    position: absolute;
+    left: -0px;
+    right: 0px;
+}
+
+.nav-health ul li:hover > ul {
+    display: block;
+}
