@@ -1,4 +1,4 @@
-import ProductCard from "./Card";
+import CardItem from "../Card";
 
 const ListProducts = () => {
     const products = [
@@ -7,16 +7,12 @@ const ListProducts = () => {
         { item: "agecare", image: "/mask-agecare.png", color: "#ee6381" },
     ];
     return (
-        <section className="card-list-products">
+        <section className="list-items">
             <h3>our products</h3>
 
-            <div className="list-products">
+            <div className="list-cards">
                 {products.map((e) => (
-                    <ProductCard
-                        item={e.item}
-                        image={e.image}
-                        color={e.color}
-                    />
+                    <CardItem item={e.item} image={e.image} color={e.color} />
                 ))}
             </div>
         </section>

@@ -64,7 +64,7 @@ footer {
     color: white;
     text-align: center;
     width: 100vw;
-    height: 242px !important;
+    height: 242px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -104,6 +104,23 @@ footer .social {
 .vertical-divider {
     display: block;
 }
+.list-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    width: 100vw;
+    align-items: center;
+    overflow: hidden;
+}
+.list-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100vw;
+    overflow: auto;
+    padding: 16px;
+}
 
 @media (max-width: 810px) {
     .banner-hero {
@@ -122,7 +139,7 @@ footer .social {
         display: none;
     }
     footer {
-        height: 100vh;
+        height: 1000px;
         padding: 16px;
         justify-content: flex-start;
         gap: 16px;
@@ -146,10 +163,17 @@ footer .social {
     footer {
         height: 100%;
     }
+    /* .list-cards {
+        justify-content: center;
+        left: 0;
+    } */
 }
 
 @media (min-width: 992px) {
 }
 
 @media (min-width: 1200px) {
+    .list-cards {
+        justify-content: center;
+    }
 }

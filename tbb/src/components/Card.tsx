@@ -4,7 +4,7 @@ interface ProductProps {
     color: string;
 }
 
-const ProductCard = ({ item, image, color }: ProductProps) => {
+const CardItem = ({ item, image, color }: ProductProps) => {
     return (
         <div className="card-product">
             <img src={image} />
@@ -15,4 +15,4 @@ const ProductCard = ({ item, image, color }: ProductProps) => {
     );
 };
 
-export default ProductCard;
+export default CardItem;

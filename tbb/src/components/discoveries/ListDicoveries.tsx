@@ -1,27 +1,27 @@
-import CardDiscovery from "./CardDicovery";
+import CardItem from "../Card";
 
 const ListDiscoveries = () => {
     const discoveries = [
         {
             image: "/women-atlete.png",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            item: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         },
         {
             image: "/women-old.png",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            item: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         },
         {
             image: "/bubbles.png",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            item: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         },
     ];
     return (
-        <section className="keep-to-date">
+        <section className="list-items">
             <h3>keep up to date with our discoveries</h3>
 
-            <div className="list-discoveries">
+            <div className="list-cards card-discovery">
                 {discoveries.map((e) => (
-                    <CardDiscovery image={e.image} content={e.content} />
+                    <CardItem image={e.image} item={e.item} color={""} />
                 ))}
             </div>
             <button onClick={() => console.log("by Marcos")}>see more</button>
