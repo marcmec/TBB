@@ -47,10 +47,57 @@ ul li {
     width: 100vw;
     padding-left: 1rem;
     position: absolute;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
     left: -0px;
     right: 0px;
 }
 
 .nav-health ul li:hover > ul {
     display: block;
+}
+.menu-mobile {
+    display: block;
+    color: black;
+}
+.navbar-mobile {
+    display: flex;
+    height: 100vh;
+    background: #389cd6;
+    color: white;
+    padding: 40px 0;
+}
+
+.navbar-mobile ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 47px;
+}
+
+@media screen and (max-width: 576px) {
+    .li-content {
+        flex-direction: column;
+    }
+}
+@media (max-width: 810px) {
+    .nav-health {
+        display: none;
+    }
+    .logo-and-search {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px;
+        height: 70px;
+        align-items: center;
+        gap: 0;
+    }
+    /* .menu-mobile {
+        display: block;
+    }
+    .navbar-mobile {
+        display: flex;
+    } */
 }

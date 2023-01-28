@@ -1,5 +1,6 @@
 import ListDiscoveries from "@/components/discoveries/ListDicoveries";
-import NavBar from "@/components/NavBar";
+import Footer from "@/components/footer/Footer";
+import NavBar from "@/components/header/NavBar";
 import ListProducts from "@/components/product/ListCard";
 import styles from "@/styles/Home.module.css";
 import Head from "next/head";
@@ -69,9 +70,7 @@ export default function Home() {
                 <div className="banner-products" />
                 <ListDiscoveries />
             </main>
-            {/* <footer>
-                <span> ooopa</span>
-            </footer> */}
+            <Footer />
         </>
     );
 }
