@@ -74,7 +74,9 @@ const NavBar = () => {
                 <div className="navbar-mobile">
                     <ul>
                         {listItems.map((e) => {
-                            return e.content?.map((i) => <li>{i}</li>);
+                            return e.content?.map((i) => (
+                                <li onClick={handleShowMenu}>{i}</li>
+                            ));
                         })}
                     </ul>
                 </div>
