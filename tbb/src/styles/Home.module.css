@@ -7,3 +7,9 @@
     min-height: 100vh;
     width: 100vw;
 }
+
+@media screen and (max-width: 810px) {
+    .main {
+        padding: 1rem;
+    }
+}

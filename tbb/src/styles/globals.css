@@ -21,6 +21,7 @@ body {
     background-image: url("/banner-hero.png");
     margin-top: 2.7rem;
     width: 100vw;
+    min-height: 300px;
     height: 550px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -104,7 +105,16 @@ footer .social {
     display: block;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 810px) {
+    .banner-hero {
+        background-image: url("/banner-intibiome-02.png");
+        margin-top: 2.7rem;
+        max-width: 429px;
+        height: 475px;
+
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
     .horizontal-divider {
         display: block;
     }

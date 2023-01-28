@@ -57,7 +57,7 @@ ul li {
     display: block;
 }
 .menu-mobile {
-    display: block;
+    display: none;
     color: black;
 }
 .navbar-mobile {
@@ -76,12 +76,13 @@ ul li {
     height: 47px;
 }
 
-@media screen and (max-width: 576px) {
+@media (max-width: 810px) {
     .li-content {
         flex-direction: column;
     }
-}
-@media (max-width: 810px) {
+    .menu-mobile {
+        display: block;
+    }
     .nav-health {
         display: none;
     }
