@@ -46,12 +46,17 @@ const NavBar = () => {
                         onClick={handleShowMenu}
                     />
                 )}
-                <Image width={195} height={79} alt={"logo"} src={"/logo.png"} />
                 <Image
-                    src={"/ic.search.png"}
+                    width={195}
+                    height={79}
+                    alt={"logo"}
+                    src={"/Module 1 - Header 970x60025@2x.png"}
+                />
+                <Image
+                    src={"/ic.search@2x.png"}
                     width={24}
                     height={24}
-                    alt={"ic.search"}
+                    alt={"ic.search@2x"}
                 />
             </div>
             <nav className="nav-health">

@@ -18,3 +18,8 @@
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
 }
+
+.card-product img {
+    max-width: 356px;
+    max-height: 351px;
+}

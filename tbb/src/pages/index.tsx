@@ -22,10 +22,10 @@ export default function Home() {
             </Head>
             <NavBar />
             <main className={styles.main}>
-                <img className="banner-hero" src="/banner-hero.png" />
+                <img className="banner-hero" src="/banner-hero@2x.png" />
                 <img
                     className="banner-hero-mobile"
-                    src="/banner-intibiome-02.png"
+                    src="/banner-intibiome-02@2x.png"
                 />
 
                 <h3>we're here to help</h3>
@@ -56,7 +56,7 @@ export default function Home() {
                     </article>
                 </section>
                 {/* <div className="icons" /> */}
-                <img src="/icons.png" className="img-icons" />
+                <img src="/icons@2x.png" className="img-icons" />
 
                 <br />
                 <h3>
@@ -81,9 +81,9 @@ export default function Home() {
                 </section>
                 <br />
                 <ListProducts />
-                <img className="banner-products" src="/banner-products.png" />
+                <img className="banner-products" src="/Asset 22@2x.png" />
                 <img
-                    src="/banner-intibiome-05.png"
+                    src="/banner-intibiome-05@2x.png"
                     className="banner-products-mobile"
                 />
                 <ListDiscoveries />
