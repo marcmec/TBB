@@ -6,6 +6,7 @@
     position: fixed;
     z-index: 2;
     background-color: white;
+    /* max-height: 80px; */
 }
 .logo-and-search {
     display: inline-flex;
@@ -14,17 +15,17 @@
     gap: 100px;
     flex-direction: row;
     width: 100vw;
+    height: 80px;
 }
 .nav-health {
     width: 100vw;
     background: #389cd6 0% 0% no-repeat padding-box;
     top: 80px;
     display: inline-block;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
     text-align: center;
     text-decoration: none;
-    height: 60px;
-    line-height: 60px;
+    height: 49px;
     color: white;
 }
 ul li {
@@ -36,12 +37,13 @@ ul li {
     display: flex;
     flex-direction: row;
     gap: 8px;
+    height: 48px;
+
     align-items: center;
 }
 .nav-sub {
     display: none;
     background: #9d8e8e 0% 0% no-repeat padding-box;
-    padding: 0;
     text-align: start;
     display: none;
     width: 100vw;
@@ -51,10 +53,12 @@ ul li {
     transition-timing-function: ease-out;
     left: -0px;
     right: 0px;
+    height: 49px;
 }
 
 .nav-health ul li:hover > ul {
-    display: block;
+    display: flex;
+    align-items: center;
 }
 .menu-mobile {
     display: none;
@@ -77,6 +81,9 @@ ul li {
 }
 
 @media (max-width: 810px) {
+    .header {
+        max-height: 70px;
+    }
     .li-content {
         flex-direction: column;
     }

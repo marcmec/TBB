@@ -64,11 +64,13 @@ const NavBar = () => {
                                     <IoIosArrowDown />
                                 ) : null}
                             </div>
-                            <ul className="nav-sub">
-                                {e.content?.map((i) =>
-                                    i != e.item ? <li>{i}</li> : null
-                                )}
-                            </ul>
+                            {e.content.includes("contact us") ? null : (
+                                <ul className="nav-sub">
+                                    {e.content?.map((i) => (
+                                        <li>{i}</li>
+                                    ))}
+                                </ul>
+                            )}
                         </li>
                     ))}
                 </ul>
