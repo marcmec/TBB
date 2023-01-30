@@ -85,6 +85,7 @@ footer {
     justify-content: flex-start;
     gap: 61px;
     align-items: center;
+    cursor: pointer;
 }
 
 footer ul li {
@@ -104,6 +105,9 @@ footer .social {
     justify-content: space-between;
     width: 100%;
     align-items: center;
+}
+footer .social img {
+    max-width: 116px;
 }
 .li-footer-content {
     display: flex;
@@ -135,6 +139,7 @@ footer .social {
     overflow: auto;
     padding: 16px;
 }
+
 .list-cards::-webkit-scrollbar {
     display: none;
 }

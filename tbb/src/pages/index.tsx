@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Tbb Test</title>
+                <title>intibiome</title>
                 <meta
                     name="description"
                     content="Created by Marcos Vinícius Silva Bento"

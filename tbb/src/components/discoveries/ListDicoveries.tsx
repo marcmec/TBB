@@ -21,7 +21,12 @@ const ListDiscoveries = () => {
 
             <div className="list-cards card-discovery">
                 {discoveries.map((e) => (
-                    <CardItem image={e.image} item={e.item} color={""} />
+                    <CardItem
+                        image={e.image}
+                        item={e.item}
+                        color={""}
+                        key={e.item}
+                    />
                 ))}
             </div>
             <button onClick={() => console.log("by Marcos")}>see more</button>
