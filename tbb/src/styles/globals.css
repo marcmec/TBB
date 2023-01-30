@@ -17,6 +17,9 @@ body {
     font: normal normal bold 16px/22px Trebuchet MS;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
 .banner-hero {
     margin: 7.7rem 0 80px 0;
     width: 100vw;
@@ -131,6 +134,9 @@ footer .social {
     width: 100vw;
     overflow: auto;
     padding: 16px;
+}
+.list-cards::-webkit-scrollbar {
+    display: none;
 }
 .img-icons {
     width: 100%;
