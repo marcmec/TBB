@@ -6,6 +6,7 @@
 button {
     width: 312px;
     height: 64px;
+    padding: 0 76px 0 40px;
     letter-spacing: 0.4px;
     color: #ffffff;
     text-transform: lowercase;

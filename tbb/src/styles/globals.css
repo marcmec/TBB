@@ -39,6 +39,7 @@ body {
 .copy-help {
     text-align: justify;
     max-width: 744px;
+    min-width: 315px;
 }
 h3 {
     padding: 0;
@@ -47,8 +48,9 @@ h3 {
     letter-spacing: 0.78px;
     color: #389cd6;
     max-width: 744px;
-    min-width: 392px;
+    min-width: 315px;
     max-height: 116px;
+    margin: 32px 0 40px 0;
 }
 p {
     text-align: center;
@@ -117,6 +119,7 @@ footer .social {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    width: 100vw;
     padding: 0 394px 2rem 394px;
     align-items: center;
     overflow: hidden;
@@ -125,6 +128,7 @@ footer .social {
     display: flex;
     justify-content: space-between;
     gap: 16px;
+    width: 100vw;
     overflow: auto;
     padding: 16px;
 }
@@ -155,7 +159,7 @@ footer .social {
         margin: 40px 0;
     }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     h3 {
         padding: 0;
         text-align: center;
