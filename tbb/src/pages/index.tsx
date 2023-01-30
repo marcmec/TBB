@@ -56,7 +56,8 @@ export default function Home() {
                     </article>
                 </section>
                 {/* <div className="icons" /> */}
-                <img src="/icons.png" />
+                <img src="/icons.png" className="img-icons" />
+
                 <br />
                 <h3>
                     whatever your age. whatever your lifestyle. whatever your
@@ -80,7 +81,11 @@ export default function Home() {
                 </section>
                 <br />
                 <ListProducts />
-                <div className="banner-products" />
+                <img className="banner-products" src="/banner-products.png" />
+                <img
+                    src="/banner-intibiome-05.png"
+                    className="banner-products-mobile"
+                />
                 <ListDiscoveries />
             </main>
             <Footer />

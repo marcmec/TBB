@@ -44,14 +44,12 @@ ul li {
 .nav-sub {
     display: none;
     background: #9d8e8e 0% 0% no-repeat padding-box;
-    text-align: start;
-    display: none;
-    width: 100vw;
-    padding-left: 1rem;
+    /* text-align: right; */
+    width: 100%;
+    padding-left: 414px;
     position: absolute;
     transition: 0.3s;
     transition-timing-function: ease-out;
-    left: -0px;
     right: 0px;
     height: 49px;
 }
