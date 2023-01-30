@@ -54,7 +54,7 @@ const NavBar = () => {
                     alt={"ic.search"}
                 />
             </div>
-            <div className="nav-health">
+            <nav className="nav-health">
                 <ul>
                     {listItems.map((e) => (
                         <li>
@@ -69,9 +69,9 @@ const NavBar = () => {
                         </li>
                     ))}
                 </ul>
-            </div>
+            </nav>
             {showMenu ? (
-                <div className="navbar-mobile">
+                <nav className="navbar-mobile">
                     <ul>
                         {listItems.map((e) => {
                             return e.content?.map((i) => (
@@ -79,7 +79,7 @@ const NavBar = () => {
                             ));
                         })}
                     </ul>
-                </div>
+                </nav>
             ) : null}
         </div>
     );
