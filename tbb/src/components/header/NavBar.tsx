@@ -59,12 +59,15 @@ const NavBar = () => {
                     {listItems.map((e) => (
                         <li>
                             <div className="li-content">
-                                {e.item} <IoIosArrowDown />
+                                {e.item}
+                                {e.content.length > 1 ? (
+                                    <IoIosArrowDown />
+                                ) : null}
                             </div>
                             <ul className="nav-sub">
-                                {e.content?.map((i) => (
-                                    <li>{i}</li>
-                                ))}
+                                {e.content?.map((i) =>
+                                    i != e.item ? <li>{i}</li> : null
+                                )}
                             </ul>
                         </li>
                     ))}
