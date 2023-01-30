@@ -11,10 +11,12 @@ const NavBar = () => {
 
     const listItems = [
         {
+            id: 0,
             item: "about us",
             content: ["brand philosophy", "product technology"],
         },
         {
+            id: 1,
             item: "our products",
             content: [
                 "all products",
@@ -24,10 +26,11 @@ const NavBar = () => {
             ],
         },
         {
+            id: 2,
             item: "intimate health",
             content: ["article 1", "article 2", "article 3", "faq"],
         },
-        { item: "contact us", content: ["contact us"] },
+        { id: 3, item: "contact us", content: ["contact us"] },
     ];
 
     return (
@@ -62,7 +65,7 @@ const NavBar = () => {
             <nav className="nav-health">
                 <ul>
                     {listItems.map((e) => (
-                        <li>
+                        <li key={e.id}>
                             <div className="li-content">
                                 {e.item}
                                 {e.content.length > 1 ? (
@@ -72,7 +75,7 @@ const NavBar = () => {
                             {e.content.includes("contact us") ? null : (
                                 <ul className="nav-sub">
                                     {e.content?.map((i) => (
-                                        <li>{i}</li>
+                                        <li key={i + 1}>{i}</li>
                                     ))}
                                 </ul>
                             )}
@@ -85,7 +88,9 @@ const NavBar = () => {
                     <ul>
                         {listItems.map((e) => {
                             return e.content?.map((i) => (
-                                <li onClick={handleShowMenu}>{i}</li>
+                                <li onClick={handleShowMenu} key={i + 1}>
+                                    {i}
+                                </li>
                             ));
                         })}
                     </ul>
