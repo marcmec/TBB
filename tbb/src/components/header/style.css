@@ -63,11 +63,10 @@ ul li {
     color: black;
 }
 .navbar-mobile {
-    display: flex;
+    display: block;
     height: 100vh;
     background: #389cd6;
     color: white;
-    padding: 40px 0;
 }
 
 .navbar-mobile ul li {
@@ -79,9 +78,6 @@ ul li {
 }
 
 @media (max-width: 810px) {
-    .header {
-        max-height: 70px;
-    }
     .li-content {
         flex-direction: column;
     }
@@ -102,8 +98,8 @@ ul li {
     }
     /* .menu-mobile {
         display: block;
-    }
-    .navbar-mobile {
-        display: flex;
     } */
+    .navbar-mobile {
+        display: block;
+    }
 }

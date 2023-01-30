@@ -47,6 +47,8 @@ h3 {
     letter-spacing: 0.78px;
     color: #389cd6;
     max-width: 744px;
+    min-width: 392px;
+    max-height: 116px;
 }
 p {
     text-align: center;
@@ -76,7 +78,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 32px;
+    gap: 61px;
     align-items: center;
 }
 
@@ -97,7 +99,6 @@ footer .social {
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    padding: 0 10%;
 }
 .li-footer-content {
     display: flex;
@@ -153,6 +154,15 @@ footer .social {
     .img-icons {
         margin: 40px 0;
     }
+}
+@media screen and (max-width: 768px) {
+    h3 {
+        padding: 0;
+        text-align: center;
+        font: normal normal bold 31px Trebuchet MS;
+        letter-spacing: 0.62px;
+        width: 100%;
+    }
     .horizontal-divider {
         display: block;
     }
@@ -160,7 +170,7 @@ footer .social {
         display: none;
     }
     footer {
-        height: 1000px;
+        height: 100vh;
         padding: 16px;
         justify-content: flex-start;
         gap: 16px;
@@ -179,18 +189,6 @@ footer .social {
     .li-footer-content {
         flex-direction: column;
     }
-}
-@media (min-width: 768px) {
-    footer {
-        height: 100%;
-    }
-    /* .list-cards {
-        justify-content: center;
-        left: 0;
-    } */
-}
-
-@media (min-width: 992px) {
 }
 
 @media (min-width: 1200px) {
