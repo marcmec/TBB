@@ -200,6 +200,11 @@ footer .social {
         flex-direction: column;
     }
 }
+@media (min-width: 1200px) {
+    footer .social {
+        padding: 0 394px 0 394px;
+    }
+}
 
 @media (min-width: 1200px) {
     .list-cards {
