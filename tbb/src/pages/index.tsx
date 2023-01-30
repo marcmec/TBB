@@ -22,9 +22,15 @@ export default function Home() {
             </Head>
             <NavBar />
             <main className={styles.main}>
-                <div className="banner-hero" />
+                <img className="banner-hero" src="/banner-hero.png" />
+                <img
+                    className="banner-hero-mobile"
+                    src="/banner-intibiome-02.png"
+                />
+
                 <h3>we're here to help</h3>
                 <br />
+
                 <section className="copy-help">
                     <article>
                         <p>
@@ -49,7 +55,8 @@ export default function Home() {
                         </p>
                     </article>
                 </section>
-                <div className="icons" />
+                {/* <div className="icons" /> */}
+                <img src="/icons.png" />
                 <br />
                 <h3>
                     whatever your age. whatever your lifestyle. whatever your
