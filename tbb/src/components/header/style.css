@@ -75,6 +75,8 @@ ul li {
     background: #389cd6;
     color: white;
     z-index: 4;
+    padding-left: 16px;
+    padding-top: 40px;
 }
 
 .navbar-mobile ul li {

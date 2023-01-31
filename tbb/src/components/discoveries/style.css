@@ -4,7 +4,7 @@
     text-align: justify;
 }
 button {
-    width: 312px;
+    min-width: 392px;
     height: 64px;
     padding: 0 76px 0 40px;
     letter-spacing: 0.4px;
