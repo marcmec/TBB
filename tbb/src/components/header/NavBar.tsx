@@ -86,11 +86,7 @@ const NavBar = () => {
                 </ul>
             </nav>
             {showMenu ? (
-                <nav
-                    className={` navbar-mobile ${
-                        !showMenu ? " show-mobile" : ""
-                    }`}
-                >
+                <nav className={"navbar-mobile"}>
                     <ul>
                         {listItems.map((e) => {
                             return e.content?.map((i) => (

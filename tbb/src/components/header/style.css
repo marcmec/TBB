@@ -77,6 +77,7 @@ ul li {
 .menu-mobile {
     display: none;
     color: black;
+    animation: appear 0.3s ease-out;
 }
 .navbar-mobile {
     display: block;
@@ -89,11 +90,7 @@ ul li {
     z-index: 4;
     padding-left: 16px;
     padding-top: 40px;
-    opacity: 1;
-    transition: opacity 2s ease-in-out;
-}
-.show-mobile {
-    opacity: 0.6;
+    animation: appear 0.3s ease-out;
 }
 
 .navbar-mobile ul li {
