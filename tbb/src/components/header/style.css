@@ -44,24 +44,33 @@ ul li {
 
     align-items: center;
 }
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 .nav-sub {
     display: none;
-    background: #9d8e8e 0% 0% no-repeat padding-box;
+    background-color: #9d8e8e;
     width: 100%;
     position: absolute;
-    transition: 0.3s;
-    transition-timing-function: ease-out;
     right: 0px;
     left: 0px;
     height: 49px;
+    opacity: 1;
     gap: 4px;
+    animation: appear 0.3s ease-out;
 }
 .nav-sub li {
     padding: 0 24px;
 }
 
-.nav-health ul li:hover > ul {
+.nav-health ul li:hover > .nav-sub {
     display: flex;
+
     align-items: center;
     /* justify-content: center; */
 }
@@ -73,10 +82,18 @@ ul li {
     display: block;
     height: 100vh;
     background: #389cd6;
-    color: white;
+    text-align: left;
+    font: normal normal bold 16px/22px Trebuchet MS;
+    letter-spacing: 0.32px;
+    color: #ffffff;
     z-index: 4;
     padding-left: 16px;
     padding-top: 40px;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+.show-mobile {
+    opacity: 0.6;
 }
 
 .navbar-mobile ul li {

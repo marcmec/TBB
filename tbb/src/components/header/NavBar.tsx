@@ -49,12 +49,14 @@ const NavBar = () => {
                         onClick={handleShowMenu}
                     />
                 )}
-                <Image
-                    width={195}
-                    height={79}
-                    alt={"logo"}
-                    src={"/Module 1 - Header 970x60025@2x.png"}
-                />
+                <a href="/">
+                    <Image
+                        width={195}
+                        height={79}
+                        alt={"logo"}
+                        src={"/Module 1 - Header 970x60025@2x.png"}
+                    />
+                </a>
                 <Image
                     src={"/ic.search@2x.png"}
                     width={24}
@@ -84,7 +86,11 @@ const NavBar = () => {
                 </ul>
             </nav>
             {showMenu ? (
-                <nav className="navbar-mobile">
+                <nav
+                    className={` navbar-mobile ${
+                        !showMenu ? " show-mobile" : ""
+                    }`}
+                >
                     <ul>
                         {listItems.map((e) => {
                             return e.content?.map((i) => (
