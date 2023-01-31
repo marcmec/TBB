@@ -2,14 +2,18 @@ interface ProductProps {
     item: string;
     image: string;
     color: string;
-    content?: string;
+    content?: { item: string; padding: string };
 }
 
 const CardItem = ({ item, image, color, content }: ProductProps) => {
     return (
         <div className="card-product">
             <img src={image} />
-            {content ? <p>{content}</p> : null}
+            {content ? (
+                <div className="p-content">
+                    <p style={{ padding: content?.padding }}>{content.item}</p>
+                </div>
+            ) : null}
 
             <div style={{ backgroundColor: color || "none" }}>
                 <span>{item}</span>

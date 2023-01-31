@@ -41,8 +41,11 @@ body::-webkit-scrollbar {
 }
 .copy-help {
     text-align: justify;
+    /* max-width: 744px; */
+    min-width: 744px;
+}
+.copy-help article {
     max-width: 744px;
-    min-width: 315px;
 }
 h3 {
     padding: 0;
@@ -147,6 +150,7 @@ footer .social img {
     width: 100%;
     max-height: 259px;
     margin: 80px 0;
+    max-width: 1132px;
 }
 
 @media (max-width: 430px) {

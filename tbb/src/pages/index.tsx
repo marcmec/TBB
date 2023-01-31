@@ -72,6 +72,7 @@ export default function Home() {
                             your intimate microbiome and pH balance, and
                             strengthen overall natural health.
                         </p>
+                        <br />
                         <p>
                             As the experts in intimate hygiene, we want to bring
                             discussion about intimate wellness care out of the

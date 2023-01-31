@@ -6,21 +6,30 @@ const ListProducts = () => {
             id: 0,
             item: "wellness",
             image: "/image-blue-mask@2x.png",
-            content: "intibiome wellness daily intimate wash",
+            content: {
+                item: "intibiome wellness daily intimate wash",
+                padding: "24px 32px",
+            },
             color: "#389cd6",
         },
         {
             id: 1,
             item: "active",
             image: "/image-green-mask@2x.png",
-            content: "intibiome active extra protection intimate wash",
+            content: {
+                item: "intibiome active extra protection intimate wash",
+                padding: "0",
+            },
             color: "#309d5f",
         },
         {
             id: 2,
             item: "agecare",
             image: "/image-pink-mask@2x.png",
-            content: "intibiome agecare dryness relief intimate wash",
+            content: {
+                item: "intibiome agecare dryness relief intimate wash",
+                padding: "24px 32px",
+            },
             color: "#ee6381",
         },
     ];
