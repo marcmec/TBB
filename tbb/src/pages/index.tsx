@@ -29,43 +29,35 @@ export default function Home() {
                 />
 
                 <h3>we're here to help</h3>
-                <br />
 
-                <section className="copy-help">
-                    <article>
+                <section className="copy-help ">
+                    <article className="article-help">
                         <p>
                             When it comes to caring for our most intimate areas,
-                            <br /> we’ve lost our connection.
+                            we’ve lost our connection.
                         </p>
-                        <br />
                         <p>
                             Embarrassed, unwilling, or unable to communicate
-                            with
-                            <br />
-                            others, we’re needlessly neglecting the parts of our
-                            bodies that need it most.
+                            with others, we’re needlessly neglecting the parts
+                            of our bodies that need it most.
                         </p>
-                        <br />
                         <p>
                             We’re here to help. Providing you with the
-                            expertise,
-                            <br />
-                            knowledge and products you need to feel confident in
-                            your personal care.
+                            expertise, knowledge and products you need to feel
+                            confident in your personal care.
                         </p>
                     </article>
                 </section>
                 {/* <div className="icons" /> */}
                 <img src="/icons@2x.png" className="img-icons" />
 
-                <br />
                 <h3>
                     whatever your age. whatever your lifestyle. whatever your
                     interests.
                 </h3>
                 <br />
                 <section className="copy-help">
-                    <article>
+                    <article className="article-whatever">
                         <p>
                             Co-created with gynaecologists, our revolutionary
                             products have been expertly developed to support
